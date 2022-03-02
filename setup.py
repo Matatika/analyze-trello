@@ -8,6 +8,7 @@ setup(
     package_data={
         "bundle": [
             "analyze/datasets/tap-trello/*.yml",
+            "orchestrate/tap-trello/elt.sh"
         ]
     },
 )

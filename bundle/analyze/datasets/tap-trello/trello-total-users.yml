@@ -1,0 +1,30 @@
+version: datasets/v0.2
+source: tap-trello
+title: Trello Total Users
+questions: How many users have access to any of the same boards as my account?
+description: |-
+  Total number of users with access to the same boards as your account.
+
+  #trello
+metadata: |-
+  {
+    "name": "trello_vw_active_users",
+    "label": "Trello Total Users", 
+    "related_table": {
+      "columns": [
+      ],
+      "aggregates": [
+        {"name": "total_users", "label": "Total Users", "description": "Total Users"}
+      ]
+    }
+  }
+visualisation: |-
+  {
+    "chartjs-chart": {
+      "chartType": "treemap"
+    }
+  }
+query: |-
+  SELECT
+    COUNT(*) "trello_vw_active_users.total_users"
+  FROM trello_vw_active_users

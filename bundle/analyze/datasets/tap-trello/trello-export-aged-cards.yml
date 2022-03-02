@@ -15,7 +15,7 @@ query: |-
     trello_cards.date_last_activity "Last Activity"
     , trello_cards.name "Card Name"
     , trello_boards.name "Board Name"
-    , trello_cards.desc "Card Description"
+    , trello_cards."desc" "Card Description"
     , trello_cards.due "Card Due Date"
     , trello_cards.url "Card URL"
   FROM trello_cards

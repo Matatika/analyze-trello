@@ -1,6 +1,6 @@
 version: datasets/v0.2
 source: tap-trello
-title: Trello Top 5 Active Cards For The Last 7 Days
+title: Top 5 Active Cards For The Last 7 Days
 questions: What were the most active cards for the last 7 days?
 description: |-
   Top 5 Trello cards by activity for for the last 7 days.
@@ -9,7 +9,7 @@ description: |-
 metadata: |-
   {
     "name": "trello_actions",
-    "label": "Trello Top 5 Active Cards For The Last 7 Days", 
+    "label": "Top 5 Active Cards For The Last 7 Days", 
     "related_table": {
       "columns": [
         {"name": "card_name", "label": "Card Name", "description": "Card Name"}

@@ -1,6 +1,6 @@
 version: datasets/v0.2
 source: tap-trello
-title: Trello Total Cards In Each Board
+title: Total Cards In Each Board
 questions: Whats the number of cards in each of my boards?
 description: |-
   Total cards in each board.
@@ -9,7 +9,7 @@ description: |-
 metadata: |-
   {
     "name": "trello_cards",
-    "label": "Trello Total Cards In Each Board", 
+    "label": "Total Cards In Each Board", 
     "related_table": {
       "columns": [
         {"name": "board_name", "label": "Board Name", "description": "Board Name"}

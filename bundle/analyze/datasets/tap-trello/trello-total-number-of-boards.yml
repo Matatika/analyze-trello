@@ -1,6 +1,6 @@
 version: datasets/v0.2
 source: tap-trello
-title: Trello Total Boards
+title: Total Boards
 questions: How many boards do i have access to?
 description: |-
   Total number of boards your account has access to.
@@ -9,7 +9,7 @@ description: |-
 metadata: |-
   {
     "name": "trello_boards",
-    "label": "Trello Total Boards", 
+    "label": "Total Boards", 
     "related_table": {
       "columns": [
       ],

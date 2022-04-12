@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="analyze-trello",
-    version="0.4.0",
+    version="0.4.1",
     description="Meltano project file bundle of Matatika datasets for tap-trello",
     packages=find_packages(),
     package_data={

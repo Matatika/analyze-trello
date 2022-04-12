@@ -11,7 +11,7 @@ meltano install transformer dbt
 meltano invoke dbt deps
 
 # run elt
-meltano elt "$EXTRACTOR" "$LOADER"
+meltano elt "$EXTRACTOR" "$LOADER" --job_id="$EXTRACTOR"-"$LOADER"-"$IMPORTRUNNERID"
 
 # dbt
 meltano invoke dbt snapshot --select tap_trello

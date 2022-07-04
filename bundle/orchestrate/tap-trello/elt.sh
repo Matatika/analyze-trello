@@ -1,14 +1,14 @@
-meltano install extractor "$EXTRACTOR"
-meltano install loader "$LOADER"
-meltano install transform "$EXTRACTOR"
-meltano install transformer dbt
+#!/bin/bash
 
-# install dbt deps
+# exit on error
+set -e
+
+# run extract-load
+meltano run tap-trello "$LOADER"
+
+# install dbt dependencies
 meltano invoke dbt deps
 
-# run elt
-meltano elt "$EXTRACTOR" "$LOADER" --job_id="$EXTRACTOR"-"$LOADER"-"$IMPORTRUNNERID"
-
-# dbt
+# snapshot and run transforms
 meltano invoke dbt snapshot --select tap_trello
 meltano invoke dbt run -m tap_trello --full-refresh
